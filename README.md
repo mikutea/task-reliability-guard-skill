@@ -1,5 +1,8 @@
 # task-reliability-guard
 
+[![English](https://img.shields.io/badge/Language-English-blue)](./README.md)
+[![中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E4%B8%AD%E6%96%87-red)](./README.zh-CN.md)
+
 A reliability-first OpenClaw skill for long-running and restart-prone tasks.
 
 It enforces:
@@ -12,7 +15,7 @@ It enforces:
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone <YOUR_GITHUB_REPO_URL> task-reliability-guard
+git clone https://github.com/mikutea/task-reliability-guard-skill.git task-reliability-guard
 openclaw skills info task-reliability-guard
 ```
 

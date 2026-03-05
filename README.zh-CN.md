@@ -1,5 +1,8 @@
 # task-reliability-guard
 
+[![English](https://img.shields.io/badge/Language-English-blue)](./README.md)
+[![中文](https://img.shields.io/badge/%E8%AF%AD%E8%A8%80-%E4%B8%AD%E6%96%87-red)](./README.zh-CN.md)
+
 一个面向 OpenClaw 的“任务可靠性”技能，适合长任务、重启中断、关键配置变更等场景。
 
 核心能力：
@@ -12,7 +15,7 @@
 
 ```bash
 cd ~/.openclaw/workspace/skills
-git clone <你的 GitHub 仓库链接> task-reliability-guard
+git clone https://github.com/mikutea/task-reliability-guard-skill.git task-reliability-guard
 openclaw skills info task-reliability-guard
 ```
 
