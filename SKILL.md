@@ -65,6 +65,14 @@ description: "Ensure reliable task execution with natural acknowledgements and f
 4. If resume fails, send blocked status + fallback plan.
 5. After task completion, clear checkpoint immediately (delete `memory/runtime-task-state.json` or mark archived) to prevent duplicate replay on future restarts.
 
+
+### Restart commit mode (anti-gap timing)
+- Treat gateway restart as a terminal action in its own turn.
+- Do all pre-restart notices/checks before restart.
+- After calling restart, do not call any further tools in the same turn.
+- Run post-restart verification in the next turn only.
+- Never combine restart with parallel/multi-step tool batches.
+
 ### Auto-resume trigger (restart-only)
 - Do not use periodic polling for resume guard.
 - Trigger resume guard only once on each gateway start/restart (e.g., service ExecStartPost hook).
